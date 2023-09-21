@@ -1,196 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>RusParking</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<header class="header fx-sb">
-    <div class="logo fx-c-a">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/all.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header fx-sb">
+      <div class="logo fx-c-a">
         <span class="logo__text">Rus</span>
-        <img src="assets/img/logo/logo.jpg" alt="logo" class="logo__img test-0-logo">
+        <img
+          src="/assets/img/logo/logo.jpg"
+          alt="logo"
+          class="logo__img test-0-logo"
+        />
         <span class="logo__text">Parking</span>
-    </div>
-    <nav class="nav fx-c-a">
+      </div>
+      <nav class="nav fx-c-a">
         <ul class="nav__list fx-c-a">
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-1">Акции</a></li>
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-2">Поиск</a></li>
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-3">Бронирование места</a></li>
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-4">Личный кабинет</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-1">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-2">Поиск</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-3">Бронирование места</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-4">Личный кабинет</a>
+          </li>
         </ul>
-    </nav>
-</header>
-<main class="main">
-    <section class="section section-light accumulate">
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section section-light accumulate">
         <div class="container">
-            <div class="form-container container">
-                <h2 class="form__title">Снижение стоимости</h2>
-                <form class="form">
-                    <label class="form__label col-2">
-                        <input type="number" class="form__input accumulate__days" value="1" placeholder=" ">
-                        <span class="form__input-title">Дни использования</span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="number" class="form__input accumulate__seats" value="5" placeholder=" ">
-                        <span class="form__input-title">Количество мест</span>
-                    </label>
-                    <div class="form__label col-2 accumulate__meter-label">
-                        <span class="accumulate__stages">Этажность</span>
-                        <meter min="0" max="4" low="2" high="3" optimum="4" value="1" class="accumulate__meter accumulate__meter-stages"></meter>
-                        <span class="accumulate__stages accumulate__stages_value">1</span>
-                    </div>
-                    <div class="form__label col-2 accumulate__meter-label">
-                        <span class="accumulate__stages">Стоимость</span>
-                        <meter min="0" max="100" low="25" high="75" optimum="15" value="100" class="accumulate__meter accumulate__meter-cost"></meter>
-                        <span class="accumulate__stages accumulate__cost_value">2500 &#8381;</span>
-                    </div>
-                </form>
-            </div>
+          <div class="form-container container">
+            <h2 class="form__title">Снижение стоимости</h2>
+            <form class="form">
+              <label class="form__label col-2">
+                <input
+                  type="number"
+                  class="form__input accumulate__days"
+                  value="1"
+                  placeholder=" "
+                />
+                <span class="form__input-title">Дни использования</span>
+              </label>
+              <label class="form__label col-2">
+                <input
+                  type="number"
+                  class="form__input accumulate__seats"
+                  value="5"
+                  placeholder=" "
+                />
+                <span class="form__input-title">Количество мест</span>
+              </label>
+              <div class="form__label col-2 accumulate__meter-label">
+                <span class="accumulate__stages">Этажность</span>
+                <meter
+                  min="0"
+                  max="4"
+                  low="2"
+                  high="3"
+                  optimum="4"
+                  value="1"
+                  class="accumulate__meter accumulate__meter-stages"
+                ></meter>
+                <span class="accumulate__stages accumulate__stages_value"
+                  >1</span
+                >
+              </div>
+              <div class="form__label col-2 accumulate__meter-label">
+                <span class="accumulate__stages">Стоимость</span>
+                <meter
+                  min="0"
+                  max="100"
+                  low="25"
+                  high="75"
+                  optimum="15"
+                  value="100"
+                  class="accumulate__meter accumulate__meter-cost"
+                ></meter>
+                <span class="accumulate__stages accumulate__cost_value"
+                  >2500 &#8381;</span
+                >
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
-    <section class="section section-dark advantages">
+      </section>
+      <section class="section section-dark advantages">
         <h2 class="section-title">Преимущества</h2>
         <div class="container advantages-container">
-            <div class="advantages__smoke"></div>
-            <div class="advantages__card">
-                <i class="advantages__icon far fa-check-circle"></i>
-                <h3 class="advantages__title">СНИЖЕНИЕ ТРАНСПОРТНОЙ НАГРУЗКИ</h3>
-                <p class="advantages__text">Стимулирование снижения объема транспортного потока. Снижение количества нарушений правил дорожного движения.</p>
-            </div>
-            <div class="advantages__card">
-                <i class="advantages__icon far fa-check-circle"></i>
-                <h3 class="advantages__title">ПОВЫШЕНИЕ ЭФФЕКТИВНОСТИ СУЩЕСТВУЮЩИХ ПАРКОВОК</h3>
-                <p class="advantages__text">Создание оптимального баланса между загрузкой придорожных и закрытых парковок. Борьба с долгосрочной парковкой.</p>
-            </div>
-            <div class="advantages__card">
-                <i class="advantages__icon far fa-check-circle"></i>
-                <h3 class="advantages__title">ПОПОЛНЕНИЕ БЮДЖЕТА ГОРОДА</h3>
-                <p class="advantages__text">Использование полученных средств для развития общественного транспорта, транспортной инфраструктуры и благоустройства города.</p>
-            </div>
+          <div class="advantages__smoke"></div>
+          <div class="advantages__card">
+            <i class="advantages__icon far fa-check-circle"></i>
+            <h3 class="advantages__title">СНИЖЕНИЕ ТРАНСПОРТНОЙ НАГРУЗКИ</h3>
+            <p class="advantages__text">
+              Стимулирование снижения объема транспортного потока. Снижение
+              количества нарушений правил дорожного движения.
+            </p>
+          </div>
+          <div class="advantages__card">
+            <i class="advantages__icon far fa-check-circle"></i>
+            <h3 class="advantages__title">
+              ПОВЫШЕНИЕ ЭФФЕКТИВНОСТИ СУЩЕСТВУЮЩИХ ПАРКОВОК
+            </h3>
+            <p class="advantages__text">
+              Создание оптимального баланса между загрузкой придорожных и
+              закрытых парковок. Борьба с долгосрочной парковкой.
+            </p>
+          </div>
+          <div class="advantages__card">
+            <i class="advantages__icon far fa-check-circle"></i>
+            <h3 class="advantages__title">ПОПОЛНЕНИЕ БЮДЖЕТА ГОРОДА</h3>
+            <p class="advantages__text">
+              Использование полученных средств для развития общественного
+              транспорта, транспортной инфраструктуры и благоустройства города.
+            </p>
+          </div>
         </div>
-    </section>
-    <section class="section section-light search" id="test-0-search">
+      </section>
+      <section class="section section-light search" id="test-0-search">
         <div class="container">
-            <div class="form-container container">
-                <h2 class="form__title">Поиск рейсов</h2>
-                <form class="form">
-                    <label class="form__label col-2">
-                        <input type="text" class="form__input test-0-fd" placeholder=" ">
-                        <span class="form__input-title">Город</span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="text" class="form__input test-0-fa" placeholder=" ">
-                        <span class="form__input-title">Район </span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="date" class="form__input test-0-fdt">
-                        <span class="form__input-title">День приезда </span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="time" class="form__input test-0-ftt">
-                        <span class="form__input-title">Время приезда </span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="date" class="form__input test-0-fat">
-                        <span class="form__input-title">День выезда </span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="time" class="form__input test-0-fwt">
-                        <span class="form__input-title">Время выезда </span>
-                    </label>
-                    <label class="form__label col-2">
-                        <input type="number" class="form__input test-0-fnp" placeholder=" ">
-                        <span class="form__input-title">Количество мест</span>
-                    </label>
-                    <label class="form__label col-2 test-0-fop form__checkbox-label">
-                        <input type="checkbox" class="form__checkbox">
-                        <span class="form__checkbox-title">Нужны отчетные документы</span>
-                    </label>
-                    <div class="form__label form__label_center col-2 test-0-fbs">
-                        <a href="/search.html" class="btn">Найти рейсы</a>
-                    </div>
-                </form>
-            </div>
+          <div class="form-container container">
+            <h2 class="form__title">Поиск рейсов</h2>
+            <form class="form">
+              <label class="form__label col-2">
+                <input
+                  type="text"
+                  class="form__input test-0-fd"
+                  placeholder=" "
+                />
+                <span class="form__input-title">Город</span>
+              </label>
+              <label class="form__label col-2">
+                <input
+                  type="text"
+                  class="form__input test-0-fa"
+                  placeholder=" "
+                />
+                <span class="form__input-title">Район </span>
+              </label>
+              <label class="form__label col-2">
+                <input type="date" class="form__input test-0-fdt" />
+                <span class="form__input-title">День приезда </span>
+              </label>
+              <label class="form__label col-2">
+                <input type="time" class="form__input test-0-ftt" />
+                <span class="form__input-title">Время приезда </span>
+              </label>
+              <label class="form__label col-2">
+                <input type="date" class="form__input test-0-fat" />
+                <span class="form__input-title">День выезда </span>
+              </label>
+              <label class="form__label col-2">
+                <input type="time" class="form__input test-0-fwt" />
+                <span class="form__input-title">Время выезда </span>
+              </label>
+              <label class="form__label col-2">
+                <input
+                  type="number"
+                  class="form__input test-0-fnp"
+                  placeholder=" "
+                />
+                <span class="form__input-title">Количество мест</span>
+              </label>
+              <label class="form__label col-2 test-0-fop form__checkbox-label">
+                <input type="checkbox" class="form__checkbox" />
+                <span class="form__checkbox-title"
+                  >Нужны отчетные документы</span
+                >
+              </label>
+              <div class="form__label form__label_center col-2 test-0-fbs">
+                <a href="/search.html" class="btn">Найти рейсы</a>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
-    <section class="section section-dark promotions" id="test-0-prom">
+      </section>
+      <section class="section section-dark promotions" id="test-0-prom">
         <h2 class="section-title">Акции</h2>
         <div class="container promotions-container">
-            <div class="promotions__card">
-                <img src="assets/img/promo/p-1.jpg" alt="promo" class="promotions__img test-0-ai">
-                <div class="promotions__info fx-c">
-                    <h3 class="promotions__title test-0-an">Акция 1</h3>
-                    <p class="promotions__text test-0-ad">Рассрочка о% на аренду машиноместа в подземном паркинге.</p>
-                    <button class="btn test-0-abm">Подробнее</button>
-                </div>
+          <div class="promotions__card">
+            <img
+              src="assets/img/promo/p-1.jpg"
+              alt="promo"
+              class="promotions__img test-0-ai"
+            />
+            <div class="promotions__info fx-c">
+              <h3 class="promotions__title test-0-an">Акция 1</h3>
+              <p class="promotions__text test-0-ad">
+                Рассрочка о% на аренду машиноместа в подземном паркинге.
+              </p>
+              <button class="btn test-0-abm">Подробнее</button>
             </div>
-            <div class="promotions__card">
-                <img src="assets/img/promo/p-2.jpg" alt="promo" class="promotions__img">
-                <div class="promotions__info fx-c">
-                    <h3 class="promotions__title">Акция 2</h3>
-                    <p class="promotions__text">При аренде парковочного места на 6 мес – омыватель стекол в подарок!</p>
-                    <button class="btn">Подробнее</button>
-                </div>
+          </div>
+          <div class="promotions__card">
+            <img
+              src="assets/img/promo/p-2.jpg"
+              alt="promo"
+              class="promotions__img"
+            />
+            <div class="promotions__info fx-c">
+              <h3 class="promotions__title">Акция 2</h3>
+              <p class="promotions__text">
+                При аренде парковочного места на 6 мес – омыватель стекол в
+                подарок!
+              </p>
+              <button class="btn">Подробнее</button>
             </div>
-            <div class="promotions__card">
-                <img src="assets/img/promo/p-3.jpg" alt="promo" class="promotions__img">
-                <div class="promotions__info fx-c">
-                    <h3 class="promotions__title">Акция 3</h3>
-                    <p class="promotions__text">При одновременной  аренде 3-ех машиномест ( на 1 месяц ) – скидка 10%</p>
-                    <button class="btn">Подробнее</button>
-                </div>
+          </div>
+          <div class="promotions__card">
+            <img
+              src="assets/img/promo/p-3.jpg"
+              alt="promo"
+              class="promotions__img"
+            />
+            <div class="promotions__info fx-c">
+              <h3 class="promotions__title">Акция 3</h3>
+              <p class="promotions__text">
+                При одновременной аренде 3-ех машиномест ( на 1 месяц ) – скидка
+                10%
+              </p>
+              <button class="btn">Подробнее</button>
             </div>
-            <div class="promotions__card">
-                <img src="assets/img/promo/p-4.jpg" alt="promo" class="promotions__img">
-                <div class="promotions__info fx-c">
-                    <h3 class="promotions__title">Акция 4</h3>
-                    <p class="promotions__text">Паркуйся выгодно! Первые 3 часа – 150 руб.
-                        Каждый последующий час – 50 руб/час.
-                        500 руб = сутки
-                        Долгосрочная аренда: месяц – 10000 руб
-                    </p>
-                    <button class="btn">Подробнее</button>
-                </div>
+          </div>
+          <div class="promotions__card">
+            <img
+              src="assets/img/promo/p-4.jpg"
+              alt="promo"
+              class="promotions__img"
+            />
+            <div class="promotions__info fx-c">
+              <h3 class="promotions__title">Акция 4</h3>
+              <p class="promotions__text">
+                Паркуйся выгодно! Первые 3 часа – 150 руб. Каждый последующий
+                час – 50 руб/час. 500 руб = сутки Долгосрочная аренда: месяц –
+                10000 руб
+              </p>
+              <button class="btn">Подробнее</button>
             </div>
+          </div>
         </div>
-    </section>
-    <section class="section section-light feedback" id="test-0-feedback">
+      </section>
+      <section class="section section-light feedback" id="test-0-feedback">
         <div class="container">
-            <div class="form-container container">
-                <h2 class="form__title">Закрытые акции</h2>
-                <form class="form">
-                    <label class="form__label col-1">
-                        <input type="text" class="form__input test-0-fd test-0-sie" placeholder=" ">
-                        <span class="form__input-title">Email</span>
-                    </label>
-                    <div class="form__label form__label_center col-2 test-0-fop">
-                        <button class="btn test-0-sbs">Найти рейсы</button>
-                    </div>
-                </form>
-            </div>
+          <div class="form-container container">
+            <h2 class="form__title">Закрытые акции</h2>
+            <form class="form">
+              <label class="form__label col-1">
+                <input
+                  type="text"
+                  class="form__input test-0-fd test-0-sie"
+                  placeholder=" "
+                />
+                <span class="form__input-title">Email</span>
+              </label>
+              <div class="form__label form__label_center col-2 test-0-fop">
+                <button class="btn test-0-sbs">Найти рейсы</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="container fx-sb">
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container fx-sb">
         <div class="footer__info test-0-phone">Тел: 8 (800) 150-15-10</div>
         <nav class="nav footer-nav fx-c-a">
-            <ul class="nav__list footer-nav__list fx-c-a">
-                <li class="nav__item footer-nav__item"><a href="/" class="nav__link footer-nav__link">Главная</a></li>
-                <li class="nav__item footer-nav__item"><a href="/login.html" class="nav__link footer-nav__link">Авторизация</a></li>
-                <li class="nav__item footer-nav__item"><a href="/register.html" class="nav__link footer-nav__link">Регистрация</a></li>
-                <li class="nav__item footer-nav__item"><a href="/#test-0-search" class="nav__link footer-nav__link">Поиск</a></li>
-                <li class="nav__item footer-nav__item"><a href="/#test-0-prom" class="nav__link footer-nav__link">Акции</a></li>
-                <li class="nav__item footer-nav__item"><a href="/" class="nav__link footer-nav__link">Назад</a></li>
-                <li class="nav__item footer-nav__item"><a href="/#test-0-feedback" class="nav__link footer-nav__link">Обратная связь</a></li>
-            </ul>
+          <ul class="nav__list footer-nav__list fx-c-a">
+            <li class="nav__item footer-nav__item">
+              <a href="/" class="nav__link footer-nav__link">Главная</a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="/login.html" class="nav__link footer-nav__link"
+                >Авторизация</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="/register.html" class="nav__link footer-nav__link"
+                >Регистрация</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="/#test-0-search" class="nav__link footer-nav__link"
+                >Поиск</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="/#test-0-prom" class="nav__link footer-nav__link"
+                >Акции</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="/" class="nav__link footer-nav__link">Назад</a>
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a href="/#test-0-feedback" class="nav__link footer-nav__link"
+                >Обратная связь</a
+              >
+            </li>
+          </ul>
         </nav>
-    </div>
-</footer>
-<script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
-<script src="assets/js/script.js"></script>
-</body>
+      </div>
+    </footer>
+    <script src="/assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
 </html>

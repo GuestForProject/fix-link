@@ -1,85 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>RusParking</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<header class="header fx-sb">
-    <div class="logo fx-c-a">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header fx-sb">
+      <div class="logo fx-c-a">
         <span class="logo__text">Rus</span>
-        <img src="assets/img/logo/logo.jpg" alt="logo" class="logo__img">
+        <img src="assets/img/logo/logo.jpg" alt="logo" class="logo__img" />
         <span class="logo__text">Parking</span>
-    </div>
-    <nav class="nav fx-c-a">
+      </div>
+      <nav class="nav fx-c-a">
         <ul class="nav__list fx-c-a">
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-1">Акции</a></li>
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-2">Поиск</a></li>
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-3">Бронирование места</a></li>
-            <li class="nav__item"><a href="#" class="nav__link test-0-nav-4">Личный кабинет</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-1">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-2">Поиск</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-3">Бронирование места</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link test-0-nav-4">Личный кабинет</a>
+          </li>
         </ul>
-    </nav>
-</header>
-<main class="main">
-    <section class="section section-light search">
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section section-light search">
         <h2 class="section-title">Личный кабинет</h2>
         <div class="container">
-            <div class="profile fx-sb fx-c-a">
-                <div class="profile-nick">
-                    <span class="test-3-name">Иван</span> <span class="test-3-last">Корепанов</span>
-                </div>
-                <div class="profile-number test-3-num">
-                    Кол-во бронирований: <span class="profile-number__value">24</span>
-                </div>
-                <a href="/login.html" class="btn logout-btn test-3-logout">Выйти <i class="fa fa-sign-out-alt"></i></a>
+          <div class="profile fx-sb fx-c-a">
+            <div class="profile-nick">
+              <span class="test-3-name">Иван</span>
+              <span class="test-3-last">Корепанов</span>
             </div>
-            <div class="datalist">
-                <div class="datalist__card">
-                    <ul class="datalist__list">
-                        <li class="datalist__item datalist__item_profile test-3-code"><span class="datalist__title">Код бронирования : </span>Ижевск</li>
-                        <li class="datalist__item datalist__item_profile test-3-park"><span class="datalist__title">Название парковки: </span>Северная</li>
-                        <li class="datalist__item datalist__item_profile test-3-d1"><span class="datalist__title">День приезда: </span>02.03.2021</li>
-                        <li class="datalist__item datalist__item_profile test-3-t1"><span class="datalist__title">Время приезда: </span>10:42</li>
-                        <li class="datalist__item datalist__item_profile test-3-d2"><span class="datalist__title">День выезда: </span>03.03.2021</li>
-                        <li class="datalist__item datalist__item_profile test-3-t2"><span class="datalist__title">Время выезда: </span>10:42</li>
-                    </ul>
-                </div>
+            <div class="profile-number test-3-num">
+              Кол-во бронирований: <span class="profile-number__value">24</span>
             </div>
-            <div class="datalist">
-                <div class="datalist__card">
-                    <ul class="datalist__list">
-                        <li class="datalist__item datalist__item_profile test-3-code"><span class="datalist__title">Код бронирования : </span>Ижевск</li>
-                        <li class="datalist__item datalist__item_profile test-3-park"><span class="datalist__title">Название парковки: </span>Северная</li>
-                        <li class="datalist__item datalist__item_profile test-3-d1"><span class="datalist__title">День приезда: </span>02.03.2021</li>
-                        <li class="datalist__item datalist__item_profile test-3-t1"><span class="datalist__title">Время приезда: </span>10:42</li>
-                        <li class="datalist__item datalist__item_profile test-3-d2"><span class="datalist__title">День выезда: </span>03.03.2021</li>
-                        <li class="datalist__item datalist__item_profile test-3-t2"><span class="datalist__title">Время выезда: </span>10:42</li>
-                    </ul>
-                </div>
+            <a
+              href="https://www.rusparking.com/login.html"
+              class="btn logout-btn test-3-logout"
+              >Выйти <i class="fa fa-sign-out-alt"></i
+            ></a>
+          </div>
+          <div class="datalist">
+            <div class="datalist__card">
+              <ul class="datalist__list">
+                <li class="datalist__item datalist__item_profile test-3-code">
+                  <span class="datalist__title">Код бронирования : </span>Ижевск
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-park">
+                  <span class="datalist__title">Название парковки: </span
+                  >Северная
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-d1">
+                  <span class="datalist__title">День приезда: </span>02.03.2021
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-t1">
+                  <span class="datalist__title">Время приезда: </span>10:42
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-d2">
+                  <span class="datalist__title">День выезда: </span>03.03.2021
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-t2">
+                  <span class="datalist__title">Время выезда: </span>10:42
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="datalist">
+            <div class="datalist__card">
+              <ul class="datalist__list">
+                <li class="datalist__item datalist__item_profile test-3-code">
+                  <span class="datalist__title">Код бронирования : </span>Ижевск
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-park">
+                  <span class="datalist__title">Название парковки: </span
+                  >Северная
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-d1">
+                  <span class="datalist__title">День приезда: </span>02.03.2021
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-t1">
+                  <span class="datalist__title">Время приезда: </span>10:42
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-d2">
+                  <span class="datalist__title">День выезда: </span>03.03.2021
+                </li>
+                <li class="datalist__item datalist__item_profile test-3-t2">
+                  <span class="datalist__title">Время выезда: </span>10:42
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="container fx-sb">
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container fx-sb">
         <div class="footer__info test-0-phone">Тел: +8 (800) 150-15-10</div>
         <nav class="nav footer-nav fx-c-a">
-            <ul class="nav__list footer-nav__list fx-c-a">
-                <li class="nav__item footer-nav__item"><a href="/" class="nav__link footer-nav__link">Главная</a></li>
-                <li class="nav__item footer-nav__item"><a href="/login.html" class="nav__link footer-nav__link">Авторизация</a></li>
-                <li class="nav__item footer-nav__item"><a href="/register.html" class="nav__link footer-nav__link">Регистрация</a></li>
-                <li class="nav__item footer-nav__item"><a href="#test-0-search" class="nav__link footer-nav__link">Поиск</a></li>
-                <li class="nav__item footer-nav__item"><a href="#test-0-prom" class="nav__link footer-nav__link">Акции</a></li>
-                <li class="nav__item footer-nav__item"><a href="/" class="nav__link footer-nav__link">Назад</a></li>
-                <li class="nav__item footer-nav__item"><a href="#test-0-feedback" class="nav__link footer-nav__link">Обратная связь</a></li>
-            </ul>
+          <ul class="nav__list footer-nav__list fx-c-a">
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/"
+                class="nav__link footer-nav__link"
+                >Главная</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/login.html"
+                class="nav__link footer-nav__link"
+                >Авторизация</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/register.html"
+                class="nav__link footer-nav__link"
+                >Регистрация</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/search.html"
+                class="nav__link footer-nav__link"
+                >Поиск</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/promotions.html"
+                class="nav__link footer-nav__link"
+                >Акции</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/"
+                class="nav__link footer-nav__link"
+                >Назад</a
+              >
+            </li>
+            <li class="nav__item footer-nav__item">
+              <a
+                href="https://www.rusparking.com/feedback.html"
+                class="nav__link footer-nav__link"
+                >Обратная связь</a
+              >
+            </li>
+          </ul>
         </nav>
-    </div>
-</footer>
-<script src="assets/js/jquery/"></script>
-<script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
-</body>
+      </div>
+    </footer>
+    <script src="assets/js/jquery/"></script>
+    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+  </body>
 </html>
