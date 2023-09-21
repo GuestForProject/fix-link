@@ -1,0 +1,570 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+/*сброс стилей*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat','sans-serif';
+}
+
+.main {
+    flex: 1 0 0;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/*общие стили*/
+::-webkit-meter-optimum-value,::-webkit-meter-suboptimum-value,::-webkit-meter-even-less-good-value {
+    transition: .5s ease-in-out;
+}
+.col-1 {
+    width: 100%;
+}
+.col-2 {
+    width: 48%;
+}
+
+.fx-sb {
+    display: flex;
+    justify-content: space-between;
+}
+.fx-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fx-c-j {
+    display: flex;
+    justify-content: center;
+}
+.fx-c-a {
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.btn {
+    padding: 10px 15px;
+    background: #00565A;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 24px;
+    transition: .25s ease-in-out;
+}
+.btn:hover {
+    background: #01898f;
+}
+/*header*/
+.header {
+    padding: 15px 25px;
+    box-shadow: 0 0 12px 1px #3e3e3e;
+}
+
+.logo__img {
+    width: 50px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.logo__text {
+    font-size: 32px;
+    color: #ff761f;
+}
+/*nav*/
+.nav__item {
+    position: relative;
+    font-size: 22px;
+}
+.nav__link {
+    transition: .25s ease-in-out;
+}
+.nav__item:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background: #01898f;
+    margin: 0 auto;
+    transition: .25s ease-in-out;
+}
+.nav__item:hover:before {
+    width: 100%;
+}
+.nav__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav__item:hover .nav__link {
+    color: #01898f;
+}
+/*header*/
+.footer {
+    padding: 25px;
+    background: #212121;
+    color: #ffffff;
+}
+.footer-nav__item,.footer__info {
+    font-size: 18px;
+}
+.footer-nav__link {
+    color: #ffffff;
+}
+/*разделы*/
+.section {
+    padding: 25px 15px;
+}
+.section-title {
+    margin-bottom: 25px;
+}
+.section-dark {
+    color: #ffffff;
+    background: #00565A;
+}
+/*формы*/
+.form-container {
+    position: relative;
+    width: 80%;
+    padding: 45px 25px 25px;
+    border: 2px solid #ff761f;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.form__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 25px;
+    background: #ffffff;
+}
+.form__title,.section-title {
+    font-size: 36px;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.passenger-form {
+    box-shadow: 0 0 5px 2px #00565ab0;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+.passenger-form__container {
+    width: 80%;
+}
+.form__label {
+    position: relative;
+    margin-bottom: 25px;
+}
+.form__input {
+    width: 100%;
+    padding: 5px 15px 5px 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    outline: none;
+    transition: .25s ease-in-out;
+}
+.form__input-title {
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: #3e3e3e;
+    font-size: 20px;
+    pointer-events: none;
+    transition: .25s ease-in-out;
+}
+.form__input:focus {
+    border-bottom-color: #00565A;
+}
+.form__input:not(:placeholder-shown) + .form__input-title, .form__input:focus + .form__input-title {
+    font-size: 14px;
+    transform: translateY(-15px);
+}
+.form__input:focus + .form__input-title {
+    color: #00565A;
+}
+.form__checkbox {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+.form__checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.form__checkbox-text {
+    font-size: 20px;
+}
+.form__label_center {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+.form__label_pass {
+    padding: 0;
+}
+/*накопление бронирований*/
+.accumulate__meter-label {
+    display: block;
+    height: 80px;
+    text-align: center;
+}
+
+.accumulate__days,.accumulate__seats {
+    height: 40px;
+    transition: none;
+}
+.accumulate__stages {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+}
+.accumulate__stages_value, .accumulate__cost_value
+{
+    display: block;
+    line-height: 20px;
+    color: #00565A;
+}
+.accumulate__meter {
+    width: 100%;
+}
+/*преимущества*/
+.advantages-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    gap: 45px;
+    margin-bottom: 20px;
+}
+.advantages__smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.advantages__card {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255,255,255,.1);
+    transform: perspective(800px) rotateY(20deg);
+    transition: .25s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+.advantages__card:hover {
+    transform: rotateY(0);
+    box-shadow: 0 0 12px 2px white;
+}
+.advantages-container:hover .advantages__smoke:not(:hover) ~ .advantages__card:not(:hover) {
+    opacity: .25;
+}
+.advantages__icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.advantages__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.advantages__text {
+    font-size: 18px;
+}
+/*акции*/
+.promotions-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+    gap: 25px;
+}
+.promotions__card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+.promotions__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promotions__info {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background: rgba(0,0,0,.75);
+    text-align: center;
+    transform: translateY(100%);
+    transition: .25s ease-in-out;
+}
+.promotions__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.promotions__text {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.promotions__card:hover {
+    box-shadow: 0 0 12px 2px white;
+}
+.promotions__card:hover .promotions__info{
+    transform: translateY(0);
+}
+/*списки(поиск, рейсы, бронирования)*/
+.datalist {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 25px;
+}
+.datalist__card {
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0 0 6px 6px rgba(0,0,0, .2),  0 5px 12px 1px rgba(0,0,0, .3);
+}
+.datalist__card:not(:last-child) {
+    margin-bottom: 30px;
+}
+.datalist__subtitle {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+.datalist__subtitle_middle {
+    margin-top: 15px;
+}
+.datalist__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.datalist__list_client {
+    padding: 25px;
+    width: 80%;
+    box-shadow: 0 0 5px 2px #00565ab0;
+    margin: 0 auto;
+}
+.datalist__list_client:not(:last-child) {
+    margin-bottom: 25px;
+}
+.datalist__item {
+    width: 48%;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.datalist__item_center {
+    margin: 0 auto;
+    text-align: center;
+}
+.datalist__subitem_center {
+    width: 100%;
+}
+.datalist__title {
+    color: #00565A;
+}
+.btn-remove {
+    background:#ff4f33
+}
+.btn-remove:hover {
+    background: #ff0000
+}
+.btn-add {
+    margin-left: auto;
+}
+.seats-table {
+    border-collapse: collapse;
+}
+.seats__td {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #00565A;
+}
+.seats__td_space {
+    border: none;
+}
+.seats__radio {
+    display: none;
+}
+.seats__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+.seats__label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00565A;
+    transform: scale(0);
+    z-index: -1;
+    transition: .25s ease-in-out;
+}
+.seats__radio:checked + .seats__label{
+    color: #ffffff;
+    font-size: 20px;
+}
+.seats__radio:checked + .seats__label:before{
+    transform: scale(1);
+}
+.profile {
+    width: 90%;
+    margin: 0 auto 20px;
+}
+.profile-nick {
+    font-size: 26px;
+}
+.profile-number {
+    font-size: 20px;
+}
+.profile-number__value {
+    color: #00565A;
+}
+@media (hover:none)
+{
+    .promotions__info {
+        transform: none;
+    }
+    .advantages__card {
+        transform: none;
+    }
+}
+@media screen and (max-width:960px)
+{
+    .header,.footer>.container {
+        flex-wrap: wrap;
+    }
+    .nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .advantages-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .advantages__card {
+        transform: none;
+    }
+    .footer-nav__item {
+        font-size: 16px;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .datalist__item,.datalist__list_client {
+        width: 100%;
+        padding: 10px;
+    }
+    .promotions-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile-nick {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .header,.footer>.container,.nav,.nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .section-title,.form__title {
+        font-size: 26px;
+    }
+    .datalist__subitem_center {
+        flex-direction: column;
+    }
+    .passenger-form__container{
+        width: 100%;
+    }
+    .btn-add {
+        order: -1;
+        margin: 0 auto 20px;
+    }
+    .seats__td {
+        width: 40px;
+        height: 40px;
+    }
+    .seats__radio:checked + .seats__label {
+        font-size: 16px;
+    }
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-nick,.profile-number {
+        margin-bottom: 15px;
+    }
+    .accumulate {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .form-container {
+        width: 95%;
+        padding: 45px 10px 15px;
+    }
+    .datalist__card {
+        padding: 10px;
+    }
+    .datalist__item {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RusParking</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header fx-sb">
+    <div class="logo fx-c-a">
+        <span class="logo__text">Rus</span>
+        <img src="assets/img/logo/logo.jpg" alt="logo" class="logo__img">
+        <span class="logo__text">Parking</span>
+    </div>
+    <nav class="nav fx-c-a">
+        <ul class="nav__list fx-c-a">
+            <li class="nav__item"><a href="#" class="nav__link test-0-nav-1">Акции</a></li>
+            <li class="nav__item"><a href="#" class="nav__link test-0-nav-2">Поиск</a></li>
+            <li class="nav__item"><a href="#" class="nav__link test-0-nav-3">Бронирование места</a></li>
+            <li class="nav__item"><a href="#" class="nav__link test-0-nav-4">Личный кабинет</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section class="section section-light search">
+        <h2 class="section-title">Бронирование</h2>
+        <div class="container">
+            <div class="datalist__card">
+                <h3 class="datalist__subtitle">Парковка</h3>
+                <ul class="datalist__list">
+                    <li class="datalist__item test-5-fc"><span class="datalist__title">Название парковки: </span>Ижевск</li>
+                    <li class="datalist__item test-5-from"><span class="datalist__title">День приезда: </span>02.03.2021</li>
+                    <li class="datalist__item test-5-dd"><span class="datalist__title">Время приезда: </span>10:42</li>
+                    <li class="datalist__item test-5-dt"><span class="datalist__title">День выезда: </span>03.03.2021</li>
+                    <li class="datalist__item test-5-tcity"><span class="datalist__title">Время выезда: </span>10:42</li>
+                    <li class="datalist__item test-5-to"><span class="datalist__title">Количество мест: </span>4</li>
+                    <li class="datalist__item test-5-tf"><span class="datalist__title">Этаж: </span>1</li>
+                    <li class="datalist__item test-5-at"><span class="datalist__title">Отчетные документы : </span>Да</li>
+                    <li class="datalist__item test-5-fp datalist__item_center"><span class="datalist__title">Стоимость: </span>1232 <span class="datalist__currency">&#8381;</span></li>
+                </ul>
+                <h3 class="datalist__subtitle datalist__subtitle_middle">Клиенты</h3>
+                <div class="form__label form__label_center col-2 test-4-bsb passenger-form__container">
+                    <form class="form passenger-form">
+                        <label class="form__label col-2">
+                            <input type="text" class="form__input test-5-name" placeholder=" ">
+                            <span class="form__input-title">Имя</span>
+                        </label>
+                        <label class="form__label col-2 test-0-fa">
+                            <input type="text" class="form__input test-5-last" placeholder=" ">
+                            <span class="form__input-title">Фамилия</span>
+                        </label>
+                        <label class="form__label col-2 test-0-fa">
+                            <input type="date" class="form__input test-5-dob">
+                            <span class="form__input-title">Дата рождения </span>
+                        </label>
+                        <div class="form__label form__label_center form__label_pass col-2 test-0-fop">
+                            <button class="btn test-2-btn btn-remove"><i class="fa fa-user-minus"></i></button>
+                        </div>
+                    </form>
+                    <form class="form passenger-form">
+                        <label class="form__label col-2">
+                            <input type="text" class="form__input test-5-name" placeholder=" ">
+                            <span class="form__input-title">Имя</span>
+                        </label>
+                        <label class="form__label col-2 test-0-fa">
+                            <input type="text" class="form__input test-5-last" placeholder=" ">
+                            <span class="form__input-title">Фамилия</span>
+                        </label>
+                        <label class="form__label col-2 test-0-fa">
+                            <input type="date" class="form__input test-5-dob">
+                            <span class="form__input-title">Дата рождения </span>
+                        </label>
+                        <label class="form__label col-2 test-0-fa">
+                            <input type="number" class="form__input test-5-doc" placeholder=" ">
+                            <span class="form__input-title">Номер документа</span>
+                        </label>
+                        <div class="form__label form__label_center form__label_pass col-2">
+                            <button class="btn test-2-btn test-5-remove  btn-remove"><i class="fa fa-user-minus"></i></button>
+                        </div>
+                    </form>
+                    <ul class="datalist__list">
+                        <li class="datalist__item datalist__subitem_center test-5-price datalist__item_center"><span class="datalist__title">Финальная стоимость: </span>1232 <span class="datalist__currency">&#8381;</span></li>
+                    </ul>
+                    <div class="form__label form__label_center col-2 test-0-fop datalist__subitem_center fx-c">
+                        <a href="booking_management.html" class="btn test-5-book">Оформить бронирование</a>
+                        <button class="btn btn-add test-5-add"><i class="fa fa-user-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container fx-sb">
+        <div class="footer__info test-0-phone">Тел: 8 (800) 150-15-10</div>
+        <nav class="nav footer-nav fx-c-a">
+            <ul class="nav__list footer-nav__list fx-c-a">
+                <li class="nav__item footer-nav__item"><a href="/" class="nav__link footer-nav__link">Главная</a></li>
+                <li class="nav__item footer-nav__item"><a href="/login.html" class="nav__link footer-nav__link">Авторизация</a></li>
+                <li class="nav__item footer-nav__item"><a href="/register.html" class="nav__link footer-nav__link">Регистрация</a></li>
+                <li class="nav__item footer-nav__item"><a href="/#test-0-search" class="nav__link footer-nav__link">Поиск</a></li>
+                <li class="nav__item footer-nav__item"><a href="/#test-0-prom" class="nav__link footer-nav__link">Акции</a></li>
+                <li class="nav__item footer-nav__item"><a href="/" class="nav__link footer-nav__link">Назад</a></li>
+                <li class="nav__item footer-nav__item"><a href="/#test-0-feedback" class="nav__link footer-nav__link">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
